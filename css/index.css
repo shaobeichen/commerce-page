@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei UI";
+}
+body{
+    background-color: #f2f2f2;
+}
+a{
+    text-decoration: none;
+}
+ul,ol,li{
+    list-style: none;
+}
+.header_top{
+    background-color: #f2f2f2;
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+}
+.header_top_left{
+    margin-left: 129.5px;
+}
+.header_top_left li{
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+    font-size: 13px;
+}
+.header_top_left a{
+    color:#666;
+}
+.header_top_right{
+    float: right;
+    margin-right: 129.5px;
+}
+.header_top_right li{
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+    font-size: 13px;
+}
+.header_top_right a{
+    color: #666;
+}
+.header_logo{
+    width:100%;
+    height: 78px;
+    padding-top: 34px;
+    background-color: #fff;
+    display: inline-block;
+}
+.logo{
+    float: left;
+    margin-left: 129.5px;
+}
+.search{
+    float: right;
+    margin-right: 129.5px;
+}
+.search_input{
+    border: 1px solid #ec3461;
+    width:450px;
+    height:34px;
+    background: url(../img/search.png) no-repeat 8px 5px;
+    padding-left:34px;
+    float: left;
+}
+.search_button{
+    float: left;
+    width: 90px;
+    height: 36px;
+    border: none;
+    color: #fff;
+    background: #ec3461;
+    cursor: pointer;
+}
+.header_type{
+    width: 100%;
+    height:40px;
+    line-height: 40px;
+    background-color: #fff;
+    margin-top: -4px;
+}
+.header_type ul{
+    padding-left: 129.5px;
+}
+.header_type a{
+    color: #000;
+}
+.header_type li{
+    float: left;
+    padding: 0 10px;
+}
+.header_type i{
+    padding-left: 15px;
+}
+
+
+
+/*轮播图开始*/
+.flexslider{
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    background:url(../img/loading.gif) 50% no-repeat;
+}
+.slides{
+    position:relative;
+    z-index:1;
+}
+.slides li {
+    height:350px;
+}
+.flex-control-nav {
+    position:absolute;
+    bottom:10px;
+    z-index:2;
+    width:100%;
+    text-align:center;
+}
+.flex-control-nav li {
+    display:inline-block;
+    width:14px;
+    height:14px;
+    margin:0 5px;
+    *display:inline;
+    zoom:1;
+}
+.flex-control-nav a {
+    display:inline-block;
+    width:14px;
+    height:14px;
+    line-height:40px;
+    overflow:hidden;
+    background:url(../img/dot.png) right 0 no-repeat;
+    cursor:pointer;
+}
+.flex-control-nav .flex-active {
+    background-position:0 0;
+}
+.flex-direction-nav {
+    position:absolute;
+    z-index:3;
+    width:100%;
+    top:45%;
+}
+.flex-direction-nav li a {
+    display:block;
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    cursor:pointer;
+    position:absolute;
+}
+.flex-direction-nav li a.flex-prev {
+    left:40px;
+    background:url(../img/prev.png) center center no-repeat;
+}
+.flex-direction-nav li a.flex-next {
+    right:40px;
+    background:url(../img/next.png) center center no-repeat;
+}
+
+/*轮播图结束*/
+
+.well-chosen{
+    padding-top:30px;
+    display: block;
+}
+.well-chosen_overview{
+    margin-left: 129.5px;
+    margin-right: 129.5px;
+    display: block;
+}
+.well-chosen_tit{
+    display: block;
+    background: url("../img/tit-3.png") no-repeat center;
+    margin-bottom: 20px;
+}
+.well-chosen_tit h3{
+    color: #666;
+    text-align: center;
+}
+.well-chosen_tit span{
+    color: #ec3461;
+}
+.well-chosen_con{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 540px;
+}
+.well-chosen_item{
+    width: 1100px;
+    height: 270px;
+}
+.well-chosen_item div{
+    margin: 5px;
+    float: left;
+}
+
+.well-chosen_more{
+    width:70px;
+    height: 20px;
+    float: right;
+}
+.well-chosen_more i{
+    padding-right: 5px;
+}
+.well-chosen_more a{
+    color: #ec3461;
+    font-size: 14px;
+}
+.buying{
+    width:1100px;
+    height:470px;
+    display: block;
+    margin: 0 auto;
+}
+
+.buying li{
+    float: left;
+    width: 336px;
+    height: 446px;
+    padding: 5px;
+    background-color: #fff;
+    margin: 10px;
+}
+.buying_con{
+    width:300px;
+    margin: 0 auto;
+}
+.buying_value{
+    float: left;
+    font-size: 18px;
+    color: #ec3461;
+    margin-top: 30px;
+}
+.buying_btn{
+    float: right;
+    color: #ffffff;
+    background-color: #ec3461;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.hot{
+
+}
+.hot li{
+    margin: 5px;
+}
+.hot_img_con{
+    background-color: #ffffff;
+
+}
