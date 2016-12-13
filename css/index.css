@@ -80,7 +80,7 @@ ul,ol,li{
     height:40px;
     line-height: 40px;
     background-color: #fff;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 .header_type ul{
     padding-left: 129.5px;
@@ -88,21 +88,47 @@ ul,ol,li{
 .header_type a{
     color: #000;
 }
-.header_type li{
+.header_type ul li{
     float: left;
     padding: 0 10px;
+    position: relative;
 }
 .header_type i{
     padding-left: 15px;
 }
+.header_type ul li ul {
+    padding-right: 15px;
+    display: none;
+    width: 150px;
+    position: absolute;
+    top:40px;
+    left:-148px;
+    z-index: 99;
+}
+.header_type ul li:hover ul {
+    display: block;
+}
+.header_type ul li ul li{
+    /*text-align: center;*/
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ffffff;
+ }
 
+.header_type ul li ul li:hover{
+    background-color: #f2f2f2;
+}
+.header_type ul li ul li a{
+    padding-left:18px;
+}
 
 
 /*轮播图开始*/
 .flexslider{
     position:relative;
     height:350px;
-    overflow:hidden;
+    overflow:auto;
     background:url(../img/loading.gif) 50% no-repeat;
 }
 .slides{
@@ -132,7 +158,7 @@ ul,ol,li{
     width:14px;
     height:14px;
     line-height:40px;
-    overflow:hidden;
+    overflow:auto;
     background:url(../img/dot.png) right 0 no-repeat;
     cursor:pointer;
 }
@@ -149,7 +175,7 @@ ul,ol,li{
     display:block;
     width:50px;
     height:50px;
-    overflow:hidden;
+    overflow:auto;
     cursor:pointer;
     position:absolute;
 }
@@ -358,5 +384,72 @@ ul,ol,li{
 }
 
 .footer{
+    width:100%;
+    min-height:260px;
+    background: #f9f9f9;
+    margin-top: 10px;
+    display: block;
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.2);
 
+}
+.footer_con{
+    width: 930px;
+    min-height: 260px;
+    margin: 0 auto;
+    /*margin-left: 129.5px;*/
+    /*margin-right: 129.5px;*/
+}
+.footer_con_top{
+    padding-top: 25px;
+    min-height:135px;
+    border-bottom: 1px solid #a6a6a6;
+}
+.footer_con_top ul{
+
+}
+
+.footer_con_top ul li {
+    float: left;
+    margin: 0 20px;
+}
+.footer_con_top ul li strong{
+    margin: 0 20px;
+}
+.footer_con_top ul li ul li {
+    clear: both;
+    font-size: 14px;
+}
+.footer_con_top a{
+    color:#000000;
+}
+
+.footer_con_bottom{
+    /*overflow:auto;*/
+    margin: 0 auto;
+    width: 504px;
+    height:100px;
+}
+.footer_bottom_line{
+    overflow:auto;
+    padding-top: 20px;
+
+}
+.footer_bottom_line ul {
+    overflow:auto;
+    width: auto;
+    margin: 0 auto;
+}
+.footer_bottom_line ul li {
+    overflow:auto;
+    float: left;
+}
+.footer_bottom_line a{
+    overflow:auto;
+    color: #000;
+}
+.footer_bottom_allright{
+    padding-top: 10px;
+    /*text-align: center;*/
+    width: 390px;
+    margin: 0 auto;
 }
